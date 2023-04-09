@@ -29,7 +29,7 @@ class Queue:
             return None
         if self.size == 1:
             self.last = None
-        temp = self.first
+        temp = self.first.value
         self.first = self.first.next
         self.size -= 1
         return temp

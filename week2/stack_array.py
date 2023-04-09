@@ -10,7 +10,7 @@ class Stack:
         return(self.array[len(self.array - 1)])
     
     def pop(self):
-        self.array.pop()
+        return self.array.pop()
 
     def is_empty(self):
         if not self.array:
