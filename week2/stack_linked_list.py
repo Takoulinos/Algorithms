@@ -8,20 +8,19 @@ class Stack:
 
     def __init__(self):
         self.top = None
-        self.bottom = None
         self.size = 0
 
     def peek(self):
         return self.top
     
     def push(self, value):
-        newNode = Node(value)
+        new_node = Node(value)
         if self.size == 0:
-            self.top = newNode
+            self.top = new_node
         else:
             temp = self.top
-            self.top = newNode
-            newNode.next = temp
+            self.top = new_node
+            new_node.next = temp
         self.size += 1
 
     def pop(self):
